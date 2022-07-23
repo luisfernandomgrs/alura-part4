@@ -1,6 +1,11 @@
 package com.luisf.demo.alura.api;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "favoriteLanguages")
 public class Language {
+  @Id
   private String id;
   private String title;
   private String urlImage;
