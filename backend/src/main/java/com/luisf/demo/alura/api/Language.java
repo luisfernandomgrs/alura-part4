@@ -1,23 +1,23 @@
 package com.luisf.demo.alura.api;
 
 public class Language {
-  private int id;
+  private String id;
   private String title;
   private String urlImage;
   private String rating;
 
-  public Language(int id, String title, String urlImage, String rating) {
+  public Language(String id, String title, String urlImage, String rating) {
     this.id = id;
     this.title = title;
     this.urlImage = urlImage;
     this.rating = rating;
   }
 
-  public int getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(String id) {
     this.id = id;
   }
 
